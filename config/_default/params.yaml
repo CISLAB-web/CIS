@@ -1,0 +1,139 @@
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+# Appearance
+
+appearance:
+  theme_day: minimal
+  theme_night: minimal
+  font: native
+  font_size: M
+
+# SEO
+
+marketing:
+  seo:
+    site_type: Organization
+    local_business_type: 'lab'
+    org_name: 'Computational Interactive System (CIS) Lab, Dankook University. 단국대학교 CIS 연구실'
+    description: 'CIS Lab advances accessible AI—assistive robotics, sign language generation, computer vision—for inclusive human–computer interaction.'
+    twitter: 'GetResearchDev'
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    google_tag_manager: ''
+    microsoft_clarity: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+
+header:
+  navbar:
+    enable: true  #是否显示导航栏。
+    align: r   #l|c|r：菜单对齐方向。
+    show_logo: true  #
+    show_language: false # 若中英双语，打开
+    show_day_night: true
+    show_search: true
+    highlight_active_link: false
+
+# Site footer
+
+#footer:
+#  copyright:
+#    notice: '© {year} CIS Lab. This work is licensed under {license}'
+#    license:
+#      enable: true
+#      allow_derivatives: false
+#      share_alike: false
+#      allow_commercial: false
+
+
+#lab_footer:
+#  enable: true
+#  address: "Room 3xx, Dept. of Computer Science, Dankook University, Yongin, Korea"
+#  phone: "+82-xx-xxxx-xxxx"
+#  email: "cis@dankook.ac.kr"
+#  # OpenStreetMap/高德/谷歌地图 iframe，留空则不显示地图
+#  map_iframe: "https://www.openstreetmap.org/export/embed.html?bbox=127.12,37.2,127.14,37.22&layer=mapnik"
+#  socials:
+#    - icon_pack: fab     # Font Awesome Brand
+#      icon: github
+#      name: GitHub
+#      url: "https://github.com/CISLAB-web"
+#    - icon_pack: ai      # Academicons
+#      icon: google-scholar
+#      name: Google Scholar
+#      url: "https://scholar.google.com/"
+#    - icon_pack: fab
+#      icon: linkedin
+#      name: LinkedIn
+#      url: "https://www.linkedin.com/"
+
+# Localization
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+  address_format: en-us
+
+# Site features
+
+features:
+  syntax_highlighter:
+    enable: false
+    extra_languages:
+      - r
+      - latex
+  math:
+    enable: true
+  privacy_pack:
+    enable: false
+  repository:
+    url: 'https://github.com/<username>/<repository>'
+    content_dir: content
+    branch: main
+  avatar:
+    gravatar: false
+    shape: circle
+  comment:
+    provider: ''
+    disqus:
+      shortname: ''
+      show_count: true
+    commento:
+      url: ''
+    giscus:
+      repo: ''
+      repo_id: ''
+      category: ''
+      category_id: ''
+  search:
+    provider: CHUXIN
+    algolia:
+      app_id: ''
+      api_key: ''
+      index_name: ''
+      show_logo: false
+  map:
+    provider: 'mapnik'
+    api_key: ''
+    zoom: 15
+
+# Extensions
+
+extensions:
+  decap_cms:
+    branch: main
+    local_backend: false
+  academicons:
+    enable: true
+
+# Citation style
+
+publications:
+  date_format: January 2006
+  citation_style: apa

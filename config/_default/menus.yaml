@@ -1,0 +1,74 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: Home
+    url: /
+    weight: 10
+  - name: Research
+    url: research
+    weight: 10
+
+  - name: Publications
+    url: publication
+    weight: 50
+
+  - name: Project
+    url: project
+    weight: 50
+
+  - name: Awards
+    url: awards
+#    url: event
+    weight: 50
+
+  - name: About us
+    url: people
+    weight: 30
+    identifier: people   # 给父菜单一个唯一 id
+
+  - name: Professor
+    url: ./author/younggeun-choi/
+    parent: people
+    weight: 20
+#  - name: Researcher
+#    url: researcher
+#    parent: people
+#    weight: 30
+#  - name: Alumni
+#    url: Alumni
+#    parent: people
+#    weight: 31
+#  - name: Administration
+#    url: Administration
+#    parent: people
+#    weight: 32
+  - name: Members
+    url: people
+    parent: people
+    weight: 29
+
+#  - name: Events
+#    url: event
+#    weight: 40
+#
+#  - name: Contact
+#    url: contact
+#    weight: 60
+
+  - name: More
+  - name: Contact
+    url: contact
+    weight: 30
+    parent: More
+  - name: Events
+    url: event
+    weight: 30
+    parent: More
+  - name: News
+    weight: 30
+    url: post
+    parent: More
+
